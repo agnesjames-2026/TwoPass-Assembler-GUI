@@ -118,7 +118,7 @@ public class TwoPassAssembler {
                     intermediate.append("\t").append(label).append("\t").append(opcode).append("\t").append(operand).append("\n");
                 } else if (opcode.equals("END")) {
                     
-                    intermediate.append("\t").append(label).append("\t").append(opcode).append("\n");
+                    intermediate.append(Integer.toHexString(locctr).toUpperCase()).append("\t").append(label).append("\t").append(opcode).append("\n");
                     break;
                 } else {
                     
